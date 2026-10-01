@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "DakAt",
-  "version": "1.2",
+  "version": "1.3",
   "permissions": ["scripting", "storage", "tabs"],
   "host_permissions": ["<all_urls>"],
 
@@ -17,7 +17,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"],
+      "js": ["themes.js", "content.js"],
       "run_at": "document_start"
     }
   ],

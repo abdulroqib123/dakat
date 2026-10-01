@@ -2,9 +2,7 @@
   const domain = location.hostname;
 
   chrome.storage.sync.get([domain], (data) => {
-    const enabled = data[domain];
-
-    if (enabled) {
+    if (data[domain]) {
       chrome.runtime.sendMessage({ action: "injectCSS" });
     }
   });
