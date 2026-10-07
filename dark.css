@@ -57,6 +57,11 @@ div, div p, div span, div strong {
   color: var(--text-primary) !important;
 }
 
+div {
+  background: #0000004b !important;
+  border-radius: var(--radius-base);
+}
+
 div a {
   color: var(--color-link) !important;
 }
