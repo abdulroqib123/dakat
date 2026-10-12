@@ -113,7 +113,12 @@
       border-radius: var(--radius-sm);
       transition: all 0.2s;
     }
-
+.btn svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.6rem;
+  flex-shrink: 0;
+}
     .btn-primary {
       background-color: var(--text-primary);
       color: var(--bg-primary);
@@ -270,10 +275,39 @@
       <h1>Switch from light mode to dark mode.</h1>
       <p>Works flawlessly on most websites. Completely open-source, built entirely with lightweight, native JavaScript, and activated with just a single click.</p>
       
-      <div class="cta-group">
-        <a href="https://microsoftedge.microsoft.com/addons/detail/dakat/ebpagfmnmojkmddjhfpjpfijifmoimon" class="btn btn-primary" target="_blank" rel="noopener">Add to Edge</a>
-        <a href="https://github.com/abdulroqib123/DakAt" class="btn btn-secondary" target="_blank" rel="noopener">View on GitHub</a>
-      </div>
+<div class="cta-group">
+  <a href="https://chromewebstore.google.com/detail/dakat/idopeajciolmeohknhoghnihbneoifjj" class="btn btn-primary" target="_blank" rel="noopener">
+    <svg viewBox="0 0 48 48" aria-hidden="true">
+      <path d="M24 24L4.95 13A22 22 0 0 1 43.05 13Z" fill="#ea4335"/>
+      <path d="M24 24L43.05 13A22 22 0 0 1 24 46Z" fill="#fbbc05"/>
+      <path d="M24 24L24 46A22 22 0 0 1 4.95 13Z" fill="#34a853"/>
+      <circle cx="24" cy="24" r="10" fill="#fff"/>
+      <circle cx="24" cy="24" r="7.5" fill="#4285f4"/>
+    </svg>
+    Add to Chrome
+  </a>
+  <a href="https://microsoftedge.microsoft.com/addons/detail/dakat/ebpagfmnmojkmddjhfpjpfijifmoimon" class="btn btn-primary" target="_blank" rel="noopener">
+  <svg viewBox="0 0 48 48" aria-hidden="true">
+  <defs>
+    <linearGradient id="edgeBase" x1="0.1" y1="0.9" x2="0.9" y2="0.4">
+      <stop offset="0" stop-color="#0c59a4"/>
+      <stop offset="1" stop-color="#1b9de2"/>
+    </linearGradient>
+    <linearGradient id="edgeWave" x1="0" y1="0.5" x2="1" y2="0.3">
+      <stop offset="0" stop-color="#35c1f1"/>
+      <stop offset="0.5" stop-color="#2fd6a8"/>
+      <stop offset="1" stop-color="#36dd8b"/>
+    </linearGradient>
+  </defs>
+  <!-- Blue base -->
+  <circle cx="24" cy="24" r="22" fill="url(#edgeBase)"/>
+  <!-- Green wave -->
+  <path d="M4 26C4 13 13 4 25 4c12 0 19 8 19 17 0 7-5 11-11 11-5 0-8-3-8-6 0-4 4-6 8-6h4c-1-5-6-8-12-8C14 12 8 18 8 26z" fill="url(#edgeWave)"/>
+</svg>
+    Add to Edge
+  </a>
+  <a href="https://github.com/abdulroqib123/DakAt" class="btn btn-secondary" target="_blank" rel="noopener">View on GitHub</a>
+</div>
     </section>
 
     <!-- Features Section -->
